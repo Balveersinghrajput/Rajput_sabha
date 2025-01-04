@@ -1,0 +1,366 @@
+/* <!-- About heading section starts --> */
+
+.about{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 3rem;
+}
+.about .image{
+    flex: 1 1 41rem;
+}
+
+.about .image img{
+    width: 100%;
+}
+
+.about .content{
+    flex: 1 1 41rem;
+    text-align: center;
+}
+
+.about .content h3{
+    font-size: 3rem;
+    color: var(--black);
+}
+
+.about .content p{
+    font-size: 1.5rem;
+    color: var(--light-bgblack);
+    line-height: 2;
+    padding: 1rem 0;
+}
+
+
+/* <!-- About heading section (End) --> */
+
+/* About image */
+.About_image {
+    background-image: url(img/about-us.jpg);
+    background-size: cover !important;
+    background-position: center !important;
+    padding-top: 10rem;
+    padding-bottom: 15rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin:0 3rem 0 3rem ;
+}
+
+.About_image h1{
+    font-size: 5rem;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--white);
+    text-shadow: var(--text-shadow);
+   
+}
+.img_text{
+    text-align: end;
+    font-size: 1rem;
+    padding: 3rem;
+    margin:0 3rem 0 3rem ;
+}
+
+/* End image(About img) */
+
+
+
+/* <!-- About midal section (start) --> */
+
+.row{
+    width: 80%;
+    max-width: 1170px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 50px;
+    overflow-x: hidden;
+    padding: 5rem 0;
+    place-items: center;
+
+}
+
+.row .row_img{
+    /* overflow: hidden; */
+    padding-left: 8rem;
+}
+
+
+.row .row_img img{
+    width: 65%;
+    height: 80%;
+   
+    border-radius: 10px;
+    object-fit: cover;
+    transition: 0.3s;
+}
+
+.row .row_img :hover {
+    transform: scale(1.2s);
+    box-shadow: 0 0 3rem rgb(0, 0, 0);
+}
+
+.row .row_content{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 20px;
+}
+
+.row .row_content span.row_text{
+    display: block;
+    font-size: 20px;
+    text-transform: capitalize;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+.row .row_content span.row_text span{
+    display: inline-block;
+    background: #222;
+    width: 70px;
+    height: 5px;
+}
+.row .row_content h2{
+    font-size: 40px;
+    font-weight: 700;
+    color: #777;
+    padding-bottom: 20px;
+}
+.row .row_content p{
+    font-size: 12px;
+    line-height: 25px;
+    padding-bottom: 25px;
+
+}
+.row .row_content a{
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    background: #222;
+}
+
+
+/* <!-- About medal section (End) --> */
+
+
+
+
+
+/* <!-- About Directors section (starts) --> */
+/* Director Section Styles */
+.Dirc-head {
+    font-size: 3rem;
+    text-align: center;
+    padding: 2rem;
+}
+
+.Dirc-head p {
+    text-transform: uppercase;
+}
+
+.Dirc-head h4 {
+    text-transform: uppercase;
+}
+
+.profile {
+    display: flex;
+    margin: 0 15rem;
+    padding-top: 1rem;
+    justify-content: space-between;
+}
+
+.profile .pro-text {
+    text-align: end;
+}
+
+.profile .pro-text h3,
+.profile .pro-text2 h3 {
+    font-size: 2rem;
+    padding: 0.5rem;
+}
+
+.profile .pro-text h4,
+.profile .pro-text2 h4 {
+    padding: 4rem 2rem 0 0;
+}
+
+/* Image Styling */
+.profile .pro-img {
+    padding: 0 2rem;
+}
+
+.profile .pro-img img {
+    border-radius: 5px;
+}
+
+/* Right side text */
+.profile .pro-text2 {
+    text-align: start;
+}
+
+/* Responsive Design */
+
+/* For medium screens (tablets and small desktops) */
+@media (max-width: 992px) {
+    .profile {
+        margin: 0 5rem;
+    }
+
+    .profile .pro-text,
+    .profile .pro-text2 {
+        text-align: center;
+    }
+
+    .profile .pro-text h3,
+    .profile .pro-text2 h3 {
+        font-size: 1.75rem;
+    }
+
+    .profile .pro-text h4,
+    .profile .pro-text2 h4 {
+        padding: 2rem 0 0 0;
+    }
+}
+
+/* For small screens (mobile phones) */
+@media (max-width: 768px) {
+    .profile {
+        display: block;
+        margin: 0;
+        padding: 0 1rem;
+    }
+
+    .profile .pro-text,
+    .profile .pro-text2 {
+        text-align: center;
+    }
+
+    .profile .pro-img {
+        text-align: center;
+        margin: 1rem 0;
+    }
+
+    .profile .pro-img img {
+        width: 150px;
+        height: 200px;
+    }
+
+    .profile .pro-text h3,
+    .profile .pro-text2 h3 {
+        font-size: 1.5rem;
+    }
+
+    .profile .pro-text h4,
+    .profile .pro-text2 h4 {
+        padding: 1rem 0 0 0;
+    }
+}
+
+/* For very small screens (mobile phones <576px) */
+@media (max-width: 576px) {
+    .Dirc-head {
+        font-size: 2rem;
+    }
+
+    .profile .pro-text h3,
+    .profile .pro-text2 h3 {
+        font-size: 1.25rem;
+    }
+
+    .profile .pro-text h4,
+    .profile .pro-text2 h4 {
+        font-size: 1rem;
+    }
+
+    .profile .pro-img img {
+        width: 120px;
+        height: 160px;
+    }
+}
+
+
+/* <!-- About Directors section (End) --> */
+
+.Thank-u .thank-text{
+    text-align: center;
+}
+
+.Thank-u .thank-text h2{
+    font-size: 5rem;
+}
+.Thank-u .thank-text h1{
+    font-size: 3rem;
+}
+
+.Thank-u .thank-text p{
+    font-size: 2rem;
+}
+
+/* About last section (Starts) */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* About :- About medal section (start)   */
+
+@media (max-width : 991px){
+    .row{
+        grid-template-columns: 1fr;
+        grid-gap: 50px;
+      
+    }
+    
+    .row .row_content{
+        padding-left: 1.3rem;
+    }
+}
+
+@media (max-width : 768px){
+    .row{
+        width: 90%;
+    }
+    .row .row_content h2{
+        font-size: 30px;
+        padding-bottom: 20px;
+    }
+    .row .row_content p{
+        line-height: 24px;
+    
+    }
+    
+}
+
+@media (max-width: 575px){
+    .row .row_content span.row_text{
+        font-size: 18px;
+    }
+    .row .row_content h2{
+        font-size: 25px;
+        
+    }
+    .row .row_content p{
+        font-size: 15px;
+        line-height: 22px;
+    
+    }
+}
+
+/* about medal section end */

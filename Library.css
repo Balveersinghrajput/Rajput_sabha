@@ -1,0 +1,644 @@
+/* Library Heading Section (Starts) */
+.head-libaray {
+    display: flex;
+    flex-wrap: wrap; /*Allows stacking on smaller screens */
+    justify-content: start;
+    background-image: url('img/library-head.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    padding: 0rem 1rem;
+}
+
+/* Content Styling - left-panel */
+.content {
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 5rem;
+    padding-bottom: 3rem;
+    padding: 2rem 1rem;
+    padding-left: 1rem;
+    flex-basis: 100%; /* Allows the content to take full width on small screens */
+    text-align: center; /* Align text center on smaller screens */
+    /* background-color: #b8c8d1; */
+    /* box-shadow: 0 0 2.5rem rgb(96, 94, 94) ; */
+}
+
+.left-panel {
+    width: 60%; /* Full width in the panel */
+    text-align: left;
+    padding: 0 1rem; /* Add padding for smaller screens */
+}
+
+.left-panel .portrait {
+    width: 100%;
+    height: auto;
+    border-radius: 0.5rem;
+    max-width: 250px;
+}
+
+.left-panel p {
+    margin: 15px 0;
+    max-width: 200px;
+}
+
+.latest-project {
+    margin-top: 30px;
+    max-width: 250px;
+}
+
+.latest-project h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    max-width: 200px;
+}
+
+.project-card {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.project-card img {
+    width: 100%;
+    max-width: 250px;
+
+    height: auto;
+    border-radius: 0.5rem;
+}
+
+/* Right-panel styling */
+.head-libaray .right-panel {
+    width: 100%; /* Full width by default */
+    
+}
+
+.head-libaray .right-panel h1 {
+    text-align: center;
+    font-size: 2rem;
+    color: rgb(53, 73, 84);
+    padding: 2rem 1rem; /* Smaller padding for better mobile experience */
+
+}
+
+/* Media Queries for Responsiveness */
+@media screen and (min-width: 768px) {
+    .head-libaray {
+        flex-direction: row; /* Display side by side on tablet and above */
+    }
+    
+    .content {
+        flex-basis: 35%; /* Left panel will take 35% of the width */
+    }
+    
+    .head-libaray .right-panel {
+        flex-basis: 65%; /* Right panel will take 65% of the width */
+    }
+
+    .head-libaray .right-panel h1 {
+        font-size: 3rem;
+        padding: 5rem 3rem 0 3rem; /* Adjust padding for larger screens */
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .head-libaray .right-panel h1 {
+        font-size: 4.45rem;
+        padding: 10rem 20rem 0 20rem;
+    }
+}
+
+/* Library Heading Section (end) */
+
+
+
+/* Base styling for larger screens */
+.lib-header-2 {
+    display: flex;
+    justify-content: space-between;
+    padding: 3rem;
+    flex-wrap: wrap;
+}
+
+.content-1 {
+    max-width: 40rem;
+    padding: 4rem;
+    padding-left: 2rem;
+}
+
+.content-1 h1 {
+    font-size: 3.5rem;
+    padding-bottom: 23rem;
+}
+
+.content-1 p {
+    border: 0.5px solid;
+    padding: 4px;
+}
+
+.content-2 {
+    max-width: 43rem;
+    padding: 4rem;
+}
+
+.content-2 img {
+    width: 100%;
+    height: auto;
+    border-radius: 1rem;
+    transition: box-shadow 400ms;
+}
+
+.content-2 img:hover {
+    box-shadow: 0 0 1rem rgb(0, 0, 0);
+}
+
+/* Accordion styling */
+.accordion {
+    max-width: 40rem;
+    margin: 0 auto;
+    border-radius: 5px;
+    padding: 4rem;
+}
+
+.accordion-item {
+    margin-bottom: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.accordion-header {
+    padding: 15px;
+    background-color: #f0f0f0;
+}
+
+.accordion-header h3 {
+    margin: 0 0 5px;
+    font-size: 18px;
+}
+
+.accordion-header p {
+    margin: 5px 0;
+    font-size: 12px;
+    color: #555;
+}
+
+.accordion-toggle {
+    width: 100%;
+    padding: 15px;
+    background-color: #6984a0;
+    color: white;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    text-align: left;
+}
+
+.accordion-content {
+    padding: 15px;
+    background-color: #fff;
+    display: none;
+    border-top: 1px solid #ddd;
+}
+
+/* Responsive layout */
+@media (max-width: 768px) {
+    .lib-header-2 {
+        flex-direction: column;
+        padding: 2rem;
+    }
+
+    .content-1, .content-2 {
+        padding: 2rem;
+        max-width: 100%;
+    }
+
+    .content-1 h1 {
+        font-size: 2.5rem;
+        padding-bottom: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .lib-header-2 {
+        padding: 1rem;
+    }
+
+    .content-1, .content-2 {
+        padding: 1rem;
+    }
+
+    .content-1 h1 {
+        font-size: 2rem;
+    }
+
+    .accordion {
+        padding: 2rem;
+    }
+
+    .accordion-toggle {
+        font-size: 14px;
+    }
+
+    .accordion-content {
+        font-size: 12px;
+    }
+}
+
+/* 
+<!-- library header step-2(end) --> */
+/* ................................................................................................ */
+/* <!-- library header step-3(Start) --> */
+/* Basic layout styling */
+.lib-step3 {
+    display: flex;
+    padding-left: 6rem;
+    align-items: flex-start; /* Aligns items to the top for better flow */
+    flex-wrap: wrap; /* Allows wrapping for smaller screens */
+    box-shadow: 0 0 1.5rem rgb(95, 93, 93) ;
+}
+
+/* left side styling */
+.book-intro {
+    max-width: 100%; /* Full width on small screens */
+    flex: 1;
+    padding: 1rem;
+    padding-top: 5rem;
+}
+
+.book-intro .head-1 h1 {
+    font-size: 2.5rem; /* Adjusted font size for smaller screens */
+    padding-right: 3rem;
+    padding-bottom: 3rem;
+    text-align: center;
+}
+
+.book-intro .head-1 img {
+    width: 100%; /* Ensure image takes full width */
+    border-radius: 2rem;
+    padding: 0 9rem 0 9rem;
+    padding-bottom: 4rem;
+}
+
+.book-intro .head-1 p {
+    padding-top: 2rem;
+    padding-right: 0;
+}
+
+/* right side styling */
+.packages {
+    /* padding: 0 15rem 0 15rem; */
+    width: 100%; /* Ensures full width on smaller screens */
+    flex: 1;
+}
+
+.packages .heading-title {
+    font-size: 5rem;
+    margin: 0%;
+
+}
+.packages .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr)); /* Adjusts columns based on screen size */
+    gap: 1.5rem;
+    padding: 0 1rem 0 1rem;
+}
+
+.packages .box-container .box {
+    border: var(--border);
+    box-shadow: var(--box-shadow);
+    background: var(--white);
+    display: none;
+}
+
+.packages .box-container .box:nth-child(1),
+.packages .box-container .box:nth-child(2),
+.packages .box-container .box:nth-child(3),
+.packages .box-container .box:nth-child(4){
+    display: inline-block;
+}
+
+.packages .box-container .box .image {
+    height: 20rem; /* Reduced height for better responsiveness */
+    overflow: hidden;
+}
+
+.packages .box-container .box .image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: .2s linear;
+}
+
+.packages .box-container .box .content {
+    padding: 1rem;
+    text-align: center;
+}
+
+/* .packages .box-container .box .content h3 { */
+    /* font-size: 2rem; Adjusted font size */
+    /* color: var(--black);
+} */
+
+.packages .box-container .box .content p {
+    font-size: 1.5rem; /* Adjusted text size */
+    color: var(--light-black);
+    line-height: 1.5;
+    padding: 1rem 0;
+}
+
+.packages .box-container .box .content p a {
+    color: #09233e;
+    font-size: 1.2rem;
+    text-decoration: underline;
+}
+
+.packages .load-more {
+    text-align: center;
+    margin-top: 1.5rem;
+}
+
+/* Responsive adjustments */
+
+/* For tablets */
+@media (max-width: 768px) {
+    .lib-step3 {
+        flex-direction: column;
+        padding-left: 0; /* Removing padding for better fit */
+    }
+
+    .book-intro {
+        padding: 1rem; /* Adjust padding for smaller screens */
+    }
+
+    .packages {
+        padding: 1rem;
+    }
+
+    .book-intro .head-1 h1 {
+        font-size: 2rem; /* Adjusted font size */
+    }
+
+    .packages .box-container {
+        grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr)); /* Smaller columns on tablets */
+    }
+
+    .packages .box-container .box .image {
+        height: 18rem; /* Adjusted height for better layout */
+    }
+}
+
+/* For mobile phones */
+@media (max-width: 480px) {
+    .lib-step3 {
+        padding: 0.5rem;
+    }
+
+    .book-intro .head-1 h1 {
+        font-size: 1.8rem; /* Smaller text for mobile */
+    }
+
+    .book-intro .head-1 p {
+        font-size: 1.2rem; /* Adjusted paragraph size */
+    }
+
+    .packages .box-container {
+        grid-template-columns: 1fr; /* Single column layout on mobile */
+    }
+
+    .packages .box-container .box .image {
+        height: 15rem; /* Further reduced height for better view on mobile */
+    }
+
+    .packages .box-container .box .content p {
+        font-size: 1rem; /* Smaller text size for mobile */
+    }
+
+    .packages .load-more .btn {
+        padding: 0.5rem 1rem;
+    }
+}
+
+
+
+
+
+/* <!-- library header step-4(Start) --> */
+/* top section */
+
+.addres_head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 4rem;
+}
+
+.addres_head .last-heading h1 {
+    font-size: 3rem;
+}
+
+.addres_head .left_p {
+    text-align: end;
+    padding-top: 2rem;
+    font-size: 1.3rem;
+}
+
+.addres_head .left_p p {
+    border-bottom: 2px solid #000;
+    width: 100%;
+    margin: 1rem 0;
+}
+.addres_head .left_p p a{
+    color: #004690;
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+    .add_location .map {
+        padding: 0 10rem;
+    }
+
+    .addres_head .last-heading h1 {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .addres_head {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .add_location {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .add_location .map {
+        padding: 0;
+    }
+}
+
+@media (max-width: 576px) {
+    .add_location .email_address a {
+        font-size: 1.2rem;
+    }
+
+    .add_location .con-num a {
+        font-size: 1rem;
+    }
+
+    .add_location .map iframe {
+        width: 100%;
+        height: 200px;
+    }
+
+    .addres_head .last-heading h1 {
+        font-size: 2rem;
+    }
+}
+
+
+
+/* Middle location */
+
+.add_location {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 2rem;
+    box-shadow: 0 0 1.5rem rgb(95, 93, 93);
+}
+
+.add_location .email_address {
+    flex: 1 1 300px;
+    padding-top: 2rem;
+    max-width: 50%;
+    padding-left: 6rem;
+}
+
+.add_location .email_address a {
+    font-size: 1.5rem;
+    padding-right: 4.5rem;
+    display: block;
+    margin-bottom: 1rem;
+    /* padding-top: 3rem; */
+}
+
+.add_location .con-num {
+    margin-top: 1rem;
+    padding-top: 3rem;
+}
+
+.add_location .con-num a {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    
+}
+
+.add_location .map {
+    flex: 1 1 500px;
+    padding: 1rem;
+}
+
+.add_location .map p {
+    box-shadow: 0 0 1.5rem rgb(95, 93, 93);
+    margin-top: 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .add_location {
+        padding: 1.5rem;
+    }
+
+    .add_location .email_address {
+        max-width: 100%;
+        padding-left: 2rem;
+    }
+
+    .add_location .map {
+        padding: 0.5rem;
+    }
+
+    .add_location .email_address a {
+        font-size: 1.4rem;
+        padding-right: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .add_location {
+        flex-direction: column;
+        align-items: center;
+        padding: 0;  /* Remove outer padding to avoid excess space */
+    }
+
+    .add_location .email_address,
+    .add_location .map {
+        max-width: 100%;
+        padding: 0;  /* Remove inner padding */
+        text-align: center;
+    }
+
+    .add_location .email_address a {
+        font-size: 1.3rem;
+        padding-right: 0;
+    }
+
+    .add_location .map iframe {
+        width: 100%;
+        height: 300px;
+    }
+
+    /* Ensure there's no extra space between elements */
+    .add_location .map,
+    .add_location .email_address {
+        margin: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .add_location {
+        padding: 0;  /* Remove padding on small screens */
+    }
+
+    .add_location .email_address {
+        flex: 1 1 100%;
+        padding: 0;
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .add_location .email_address a {
+        font-size: 1.2rem;
+        padding: 0;
+        margin: 0.5rem 0;
+    }
+
+    .add_location .con-num a {
+        font-size: 1rem;
+    }
+
+    .add_location .map {
+        flex: 1 1 100%;
+        padding: 0;
+    }
+
+    .add_location .map iframe {
+        width: 100%;
+        height: 250px;
+    }
+
+    /* Tighten margins */
+    .add_location .map p {
+        margin: 0;
+    }
+}
+
+
+/* <!-- library header step-4(End) -->................................................................... */

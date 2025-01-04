@@ -1,0 +1,644 @@
+/* Servive.php - Services-header section (Starts) */
+.service-head {
+  background-image: url(img/service-bg01.jpg);
+  background-size: cover;
+  background-position: center;
+  padding-bottom: 2rem;
+}
+
+.service-head .ser-text h1 {
+  font-size: 12rem;
+  color: rgb(97, 97, 97);
+}
+
+.service-head .first-text {
+  text-align: end;
+  padding-left: 105rem;
+}
+
+.service-head .ser-text p {
+  padding-top: 2rem;
+  padding-right: 93rem;
+  /* text-align: center; */
+  font-size: 1.2rem;
+}
+
+.service-head .ser-text h5 {
+  font-size: 6rem;
+  padding-left: 38rem;
+  color: rgb(97, 97, 97);
+}
+
+/* Buttons */
+.service-head .buttons {
+  margin-top: 0px;
+}
+
+.service-head .buttons .btn {
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+.service-head .buttons .btn.primary {
+  background-color: #000;
+  color: #fff;
+}
+
+.service-head .buttons .btn.secondary {
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #000;
+}
+
+/* Box-image */
+.box-img {
+  display: flex;
+  /* justify-content: center; */
+}
+
+.box-img .box img {
+  width: 11rem;
+  height: 11rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  margin: 1rem;
+  transition: 400ms;
+}
+
+.box-img .box:hover {
+  box-shadow: 0 0 3rem rgb(0, 0, 0);
+  transform: scale(1.03);
+}
+
+/* Responsive Design */
+
+/* For medium screens (tablets and small desktops) */
+@media (max-width: 992px) {
+  .service-head .ser-text h1 {
+      font-size: 8rem;
+  }
+
+  .service-head .ser-text h5 {
+      font-size: 4rem;
+      padding-left: 0;
+  }
+
+  .service-head .first-text {
+      padding-left: 0;
+      text-align: center;
+  }
+
+  .service-head .ser-text p {
+      padding-right: 0;
+  }
+
+  .box-img {
+      flex-wrap: wrap;
+  }
+
+  .box-img .box img {
+      width: 9rem;
+      height: 9rem;
+  }
+}
+
+/* For small screens (mobile phones) */
+@media (max-width: 768px) {
+  .service-head .ser-text h1 {
+      font-size: 5rem;
+  }
+
+  .service-head .ser-text h5 {
+      font-size: 2.5rem;
+      padding-left: 0;
+  }
+
+  .service-head .first-text {
+      padding-left: 0;
+      text-align: center;
+  }
+
+  .service-head .ser-text p {
+      padding-right: 0;
+  }
+
+  .box-img .box img {
+      width: 7rem;
+      height: 7rem;
+  }
+
+  .service-head .buttons {
+      /* text-align: center; */
+      padding-top: 1rem;
+  }
+
+  .service-head .buttons .btn {
+      display: inline-block;
+      margin: 0.5rem 0;
+  }
+}
+
+/* For very small screens (mobile phones <576px) */
+@media (max-width: 576px) {
+  .service-head .ser-text h1 {
+      font-size: 3rem;
+  }
+
+  .service-head .ser-text h5 {
+      font-size: 1.8rem;
+  }
+
+  .service-head .first-text {
+      font-size: 0.8rem;
+      padding-left: 0;
+      text-align: center;
+  }
+
+  .service-head .ser-text p {
+      font-size: 1rem;
+      padding-right: 0;
+  }
+
+  .box-img .box img {
+      width: 5rem;
+      height: 5rem;
+  }
+}
+
+/* Servive.php - Services-header section (End) */
+
+
+
+
+/* Servive.php - Services-Sport section (Starts) */
+.Sport-text-section {
+    padding: 50px 0;
+  }
+  
+  .Sport-text-section .Sport-container {
+    display: flex;
+    flex-direction:reverse; /* This moves the image to the right */
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    flex-wrap: wrap;
+  }
+
+  
+  .Sport-text-section .Sport-text {
+    flex: 1;
+    margin-right: 2.5rem; /* Adjust margin to create space between text and image */
+  }
+  
+  .Sport-text-section .Sport-text h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .Sport-text-section .Sport-text p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+  }
+  
+  .Sport-text-section .Sport-image {
+    flex: 1;
+  }
+  
+  .Sport-text-section .Sport-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+
+
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .Sport-text-section .Sport-container {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .Sport-text-section .Sport-text {
+      margin-right: 0;
+      margin-top: 20px;
+    }
+  
+    .Sport-text-section .Sport-image img {
+      max-width:80%;
+      margin-top: 10px;
+  }
+  }
+
+/* Servive.php - Services-Sport section (End) */
+
+/* Service.php - service - yuva munch section (Starts) */
+.Yuva-image-text-section {
+    padding: 50px 0;
+    background-color: #eeebeb;
+  }
+  
+  .Yuva-image-text-section .Yuva-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .Yuva-image-text-section .Yuva-image {
+    flex: 1;
+  }
+  
+  .Yuva-image-text-section .Yuva-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .Yuva-image-text-section .Yuva-text {
+    flex: 1;
+    margin-left: 30px;
+  }
+  
+  .Yuva-image-text-section .Yuva-text h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .Yuva-image-text-section .Yuva-text p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+  }
+  
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+      .Yuva-image-text-section .Yuva-container {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .Yuva-image-text-section .Yuva-text {
+      margin-left: 0;
+      margin-top: 20px;
+    }
+  
+    .Yuva-image-text-section .Yuva-image img {
+      max-width:80%;
+    }
+  }
+  
+
+/* Service.php - service - yuva munch section (End) */
+
+
+
+/* <!-- Service.php - Services_varvadu (Start) --> */
+.service-var{
+    font-size: 3rem;
+    text-align: center;
+    padding: 2rem;
+    
+}
+.service-var p {
+    text-transform: uppercase;
+}
+.service-var h4{
+    text-transform: uppercase;
+
+}
+.ser_varvadu{
+    padding: 0%;
+    margin: 0 15rem;
+}
+
+
+.profiles{
+    display: flex;
+    margin:  0 15rem;
+}
+
+.profiles .pro-detail{
+    text-align: end;
+
+}
+.profiles .pro-detail h3{
+    font-size: 2rem;
+    padding: 0.5rem;
+}
+
+.profiles .pro-detail h4{
+    padding: 4rem  2rem 0 0;
+}
+
+
+/* image */
+.profiles .pro-imgs{
+    padding: 0 2rem;
+}
+
+/* Right side text */
+
+.profiles .pro-detail2 h3{
+    font-size: 2rem;
+    padding: 0.5rem;
+}
+
+.profiles .pro-detail2 h4{
+    padding: 4rem  2rem 0 0;
+}
+
+
+.ser_varvadu a{
+    margin: 1rem 57rem 0rem 57rem;
+} 
+
+/* more details btn */
+.ser-var-btn {
+    text-align: center;
+    padding-bottom: 2rem;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .ser_varvadu {
+      margin: 0 10rem;
+  }
+
+  .profiles {
+      margin: 0 10rem;
+  }
+
+  .ser_varvadu a {
+      margin: 1rem 50rem 0 50rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .ser_varvadu {
+      margin: 0 5rem;
+  }
+
+  .profiles {
+      margin: 0 5rem;
+  }
+
+  .ser_varvadu a {
+      margin: 1rem 40rem 0 40rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .ser_varvadu {
+      margin: 0 3rem;
+  }
+
+  .profiles {
+      display: block;
+      margin: 0;
+  }
+
+  .profiles .pro-imgs {
+      display: block;
+      text-align: center;
+      padding: 1rem 0;
+  }
+
+  .profiles .pro-detail,
+  .profiles .pro-detail2 {
+      text-align: center;
+      padding: 1rem 0;
+  }
+
+  .ser_varvadu a {
+      margin: 1rem auto;
+      display: block;
+  }
+}
+
+@media (max-width: 576px) {
+  .service-var {
+      font-size: 2rem;
+  }
+
+  .profiles .pro-detail h3,
+  .profiles .pro-detail2 h3 {
+      font-size: 1.5rem;
+  }
+
+  .ser_varvadu {
+      margin: 0 1rem;
+  }
+
+  .ser_varvadu a {
+      margin: 1rem auto;
+      display: block;
+  }
+}
+/* <!-- Service.php - Services_varvadu (End) --> */
+
+
+
+
+/* <!-- Service.php - Services_mahila vibhag (Start) --> */
+
+.Mahila-text-section {
+    padding: 50px 0;
+    background-color: #eeebeb;
+  }
+  
+  .Mahila-text-section .Mahila-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .Mahila-text-section .Mahila-image {
+    flex: 1;
+  }
+  
+  .Mahila-text-section .Mahila-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .Mahila-text-section .Mahila-text {
+    flex: 1;
+    margin-left: 30px;
+  }
+  
+  .Mahila-text-section .Mahila-text h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .Mahila-text-section .Mahila-text p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+  }
+  
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+      .Mahila-text-section .Mahila-container {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .Mahila-text-section .Mahila-text {
+      margin-left: 0;
+      margin-top: 20px;
+    }
+  
+    .Mahila-text-section .Mahila-image img {
+      max-width:80%;
+    }
+  }
+  
+  
+  
+
+
+/* <!-- Service.php - Services_mahila vibhag (End) --> */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Sport.php */
+.sport .sp_header{
+    background-image: url(img/sport_img01.jpg);
+    background-size: cover;
+
+}
+
+.sport .sp_header h1{
+    margin: 0%;
+    padding: 5rem;
+    color: rgb(175, 181, 186);
+    font-size: 7rem;
+    text-align: center;
+}
+
+
+
+
+
+/* varvadu.php css in this below(Start) */
+
+
+.varvadu .var_header{
+
+    background-image: url(img/varvadu-img1.jpg);
+    background-size: cover;
+
+}
+
+.varvadu .var_header h1{
+    margin: 0%;
+    padding: 5rem;
+    color: rgb(68, 68, 68);
+    font-size: 7rem;
+    text-align: center;
+}
+
+
+
+/* varvadu.php (end) */
+
+
+/* yuvamanch.php css inthis below(Start) */
+
+.yuva .yuva_header{
+    background-image: url(img/yuvamanch-img.jpg);
+    background-size: cover;
+}
+
+.yuva .yuva_header h1{
+    margin: 0%;
+    padding: 5rem;
+    color: rgb(250, 234, 234);
+    font-size: 7rem;
+    text-align: center;
+}
+/* yuvamanch.php (End) */
+
+
+
+
+
+
+/* Mahila-vibhag.php css in this beloe section  (Start) */
+
+.Mahila-vibhag .Mahila_header{
+    background-image: url(img/mahila-img1.webp);
+    background-size: cover;
+}
+
+.Mahila-vibhag .Mahila_header h1{
+    margin: 0%;
+    padding: 5rem;
+    color: rgb(17, 15, 15);
+    font-size: 7rem;
+    text-align: center;
+}
+
+/* Mahila-vibhag (Ends) */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Donation.php css inthis below(Start) */
+
+.Donation .Donation_header{
+    background-image: url(img/Donation-img.webp);
+    background-size: cover;
+}
+
+
+.Donation .Donation_header h1{
+    margin: 0%;
+    padding: 5rem;
+    color: rgb(250, 234, 234);
+    font-size: 7rem;
+    text-align: center;
+}
+
+
+
+
+/* Donation.php (Ends) */
